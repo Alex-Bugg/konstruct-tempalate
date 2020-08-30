@@ -1,21 +1,118 @@
 <!DOCTYPE html>
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <title>Gulp</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/main.min.css" />
-  <title>Gulp</title>
-</head>
+  <body>
+    <header class="main__header">
+  <div class="main__header_wrap">
+    <div class="main__header_logo">
+      <a class="main__header_logo_link" href="/">
+        <svg width="103" height="23">
+          <use href="./svg/sprite.svg#logo"></use>
+        </svg>
+      </a>
+    </div>
+    <div class="main__header_title_wrap">
+      <h1 class="main__header_title">PARTNER WITH KONSTUCT</h1>
+      <p class="main__header_parag">
+        An award-winning construction management firm
+      </p>
+    </div>
+    <div class="main__header_btn_wrap">
+      <button class="main__header_btn" type="button">
+        SCROLL DOWN
+      </button>
+      <svg class="main__header_btn_svg" width="24" height="24">
+        <use href="./svg/sprite.svg#arrow"></use>
+      </svg>
+    </div>
+  </div>
+  <div class="container">
+    <div class="header__navigation">
+      <div class="header__navigation_wrap_logo">
+        <a class="header__navigation_wrap_link" href="/">
+          <svg width="102" height="23">
+            <use href="./svg/sprite.svg#logo-black"></use>
+          </svg>
+        </a>
+      </div>
+      <nav class="header__navigation_nav">
+        <ul class="header__navigation_list">
+          <li><a href="#" class="header__navigation_link">HOME</a></li>
+          <li>
+            <a
+              href="#"
+              class="header__navigation_link header__navigation_link_active"
+              >ABOUT</a
+            >
+          </li>
+          <li><a href="#" class="header__navigation_link">SERVICES</a></li>
+          <li><a href="#" class="header__navigation_link">WORK</a></li>
+          <li><a href="#" class="header__navigation_link">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
 
-<body>
-  <header class="main_header"></header>
 
-  <main></main>
+    <main class="main">
+      <section class="our_story">
+        <div class="container">
+          <h3 class="our_story__main_title">OUR STORY</h3>
+          <div class="our_story__wrap">
+            <div class="our_story__about_text">
+              <h4 class="our_story__title">
+                Founded in 2011 by John Mathew Smith,
+                <a href="#" class="our_story__inner_link">Konstruct</a> has
+                become the number one construction management firm
+              </h4>
+              <p class="our_story_parag">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                aliquam erat. Lorem ipsum dolor sit amet, consectetuer
+                adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                laoreet dolore magna aliquam erat.
+              </p>
+            </div>
+            <div class="our_story__image_wrap">
+              <div class="our_story__image_item">
+                <h4 class="our_story__image_title">WE PLAN</h4>
+              </div>
+              <div class="our_story__image_item">
+                <h4 class="our_story__image_title">WE MANAGE</h4>
+              </div>
+              <div class="our_story__image_item">
+                <h4 class="our_story__image_title">WE BUILD</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="our_carabilities">
+        <div class="container">
+          <div class="our_carabilities__wrapper">
+            <h2 class="our_carabilities__title">OUR CAPABILITIES</h2>
+            <p class="our_carabilities__paragraph">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+              erat.
+            </p>
+            <button class="blue_button" type="button">
+              ALL SERVICES
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
 
-  <footer class="main_footer"></footer>
-  <script src="js/main.min.js"></script>
-</body>
-
+    <footer class="main_footer"></footer>
+    <script src="js/main.min.js"></script>
+  </body>
 </html>

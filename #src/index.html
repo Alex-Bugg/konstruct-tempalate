@@ -1,21 +1,67 @@
 <!DOCTYPE html>
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <title>Gulp</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/main.min.css" />
-  <title>Gulp</title>
-</head>
+  <body>
+    @@include('_header.html')
 
-<body>
-  @@include('_header.html')
+    <main class="main">
+      <section class="our_story">
+        <div class="container">
+          <h3 class="our_story__main_title">OUR STORY</h3>
+          <div class="our_story__wrap">
+            <div class="our_story__about_text">
+              <h4 class="our_story__title">
+                Founded in 2011 by John Mathew Smith,
+                <a href="#" class="our_story__inner_link">Konstruct</a> has
+                become the number one construction management firm
+              </h4>
+              <p class="our_story_parag">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                aliquam erat. Lorem ipsum dolor sit amet, consectetuer
+                adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                laoreet dolore magna aliquam erat.
+              </p>
+            </div>
+            <div class="our_story__image_wrap">
+              <div class="our_story__image_item">
+                <h4 class="our_story__image_title">WE PLAN</h4>
+              </div>
+              <div class="our_story__image_item">
+                <h4 class="our_story__image_title">WE MANAGE</h4>
+              </div>
+              <div class="our_story__image_item">
+                <h4 class="our_story__image_title">WE BUILD</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="our_carabilities">
+        <div class="container">
+          <div class="our_carabilities__wrapper">
+            <h2 class="our_carabilities__title">OUR CAPABILITIES</h2>
+            <p class="our_carabilities__paragraph">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+              erat.
+            </p>
+            <button class="blue_button" type="button">
+              ALL SERVICES
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
 
-  <main></main>
-
-  @@include('_footer.html')
-  <script src="js/main.min.js"></script>
-</body>
-
+    @@include('_footer.html')
+    <script src="js/main.min.js"></script>
+  </body>
 </html>
