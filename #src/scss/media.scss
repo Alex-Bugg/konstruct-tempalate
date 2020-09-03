@@ -21,11 +21,11 @@
   .our_carabilities__card_paragraph {
     font-size: 11px;
   }
+  .our_story {
+    padding: 15px 0;
+  }
 }
 @media (max-width: 845px) {
-  .our_story {
-    padding: 40px 0;
-  }
   .our_story__main_title {
     margin-bottom: 35px;
   }
@@ -48,13 +48,18 @@
   .our_carabilities_btn {
     align-self: flex-end;
   }
-}
-
-@media (max-width: 780px) {
-  .our_carabilities__card {
-    &:last-child {
-      margin-top: 10px;
-    }
+  .get_start {
+    padding-top: 15px;
+  }
+  .our_carabilities__wrapper {
+    margin-bottom: 25px;
+  }
+  .our_carabilities {
+    padding-bottom: 15px;
+  }
+  .singup_wrapper,
+  .block_info {
+    padding: 15px 0;
   }
 }
 
@@ -81,5 +86,110 @@
     &_parag {
       max-width: unset;
     }
+  }
+  .block_info_wrapper {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+
+@media (max-width: 610px) {
+  .singup_wrapper {
+    flex-direction: column;
+  }
+  .singup_title {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 570px) {
+  .block_info_wrapper {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .block_info__company,
+  .block_info__links {
+    max-width: unset;
+    margin-bottom: 15px;
+  }
+  .block_info_title_block {
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 540px) {
+  .burger {
+    position: relative;
+    min-width: 20px;
+    min-height: 12px;
+    background-color: transparent;
+    &::after,
+    &::before {
+      content: "";
+      width: 20px;
+      height: 2px;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #000;
+      border-radius: 5px;
+    }
+    &::before {
+      top: 100%;
+    }
+    &_helper {
+      width: 20px;
+      height: 2px;
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      background-color: #000;
+      border-radius: 5px;
+    }
+  }
+  .header__navigation_nav {
+    opacity: 0;
+    right: -15px;
+    top: -380px;
+    position: absolute;
+    width: 100vh;
+    transform: scaleY(0);
+    transition: 0.8s;
+  }
+
+  .nav_active {
+    transform: scaleY(1);
+
+    opacity: 1;
+    top: 60px;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+
+  .header__navigation_list {
+    flex-direction: column;
+    & li {
+      text-align: right;
+      margin-bottom: 25px;
+    }
+  }
+  .header__navigation_link {
+    padding: 12.5px;
+  }
+}
+
+@media (min-width: 540px) {
+  .burger {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .singup_input {
+    max-width: 210px;
+  }
+  .singup_btn {
+    max-width: 120px;
   }
 }

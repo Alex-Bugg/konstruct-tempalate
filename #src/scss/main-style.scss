@@ -38,6 +38,7 @@ html {
     line-height: 70px;
     letter-spacing: 5.70937px;
     color: #ffffff;
+    text-align: center;
   }
   &_parag {
     font-family: Open Sans;
@@ -92,18 +93,22 @@ html {
 }
 
 .header__navigation {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 19px 0;
   &_list {
     display: flex;
-    min-width: 410px;
-    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    & li {
+      margin: 10px 0;
+    }
   }
   &_link {
     padding: 10px;
-    font-family: Open Sans;
+    font-family: "Open Sans";
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
@@ -195,12 +200,16 @@ html {
   &__image_wrap {
     display: flex;
     margin-top: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
   }
   &__image_item {
     width: 140px;
     height: 224px;
     padding: 15px;
-    margin-right: 20px;
+    margin-bottom: 10px;
     &:first-child {
       background-image: url("../img/about-1.jpg");
     }
@@ -209,7 +218,6 @@ html {
     }
     &:nth-last-child(1) {
       background-image: url("../img/about-3.jpg");
-      margin-right: 0;
     }
   }
   &__image_title {
@@ -279,6 +287,7 @@ html {
     padding: 38px 20px 38px 23px;
     border: 1px solid #e6e6e6;
     max-width: 295px;
+    margin-bottom: 10px;
     &_title {
       font-style: normal;
       font-weight: bold;
@@ -304,9 +313,10 @@ html {
   }
 }
 .blue_button {
-  min-width: 150px;
+  max-width: 150px;
+  width: 100%;
   padding: 10px;
-  font-family: Open Sans;
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: bold;
   font-size: 13px;
@@ -414,10 +424,14 @@ html {
   }
   &_label {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
   }
   &_input {
     padding: 10px 17px;
-    min-width: 250px;
+    width: 100%;
+    max-width: 250px;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -426,6 +440,7 @@ html {
     align-items: flex-end;
     letter-spacing: 0.07px;
     color: #48555b;
+    border-radius: 0;
   }
 }
 
