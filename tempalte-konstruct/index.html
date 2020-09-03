@@ -25,16 +25,16 @@
       </p>
     </div>
     <div class="main__header_btn_wrap">
-      <button class="main__header_btn" type="button">
+      <a href="#scroll" class="main__header_btn" type="button">
         SCROLL DOWN
-      </button>
+      </a>
       <svg class="main__header_btn_svg" width="24" height="24">
         <use href="./svg/sprite.svg#arrow"></use>
       </svg>
     </div>
   </div>
   <div class="container">
-    <div class="header__navigation">
+    <div class="header__navigation" id="scroll">
       <div class="header__navigation_wrap_logo">
         <a class="header__navigation_wrap_link" href="/">
           <svg width="102" height="23">
@@ -104,7 +104,7 @@
               nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
               erat.
             </p>
-            <button class="blue_button" type="button">
+            <button class="our_carabilities_btn blue_button" type="button">
               ALL SERVICES
             </button>
           </div>
@@ -157,7 +157,137 @@
       </section>
     </main>
 
-    <footer class="main_footer"></footer>
+    <footer class="main_footer">
+  <section class="singup">
+    <div class="container">
+      <div class="singup_wrapper">
+        <h2 class="singup_title">Newsletter Signup</h2>
+        <label class="singup_label">
+          <input
+            class="singup_input"
+            type="text"
+            placeholder="test@youremail.com"
+          />
+          <button type="button" class="singup_btn blue_button">SIGNUP</button>
+        </label>
+      </div>
+    </div>
+  </section>
+  <section class="block_info">
+    <div class="container">
+      <div class="block_info_wrapper">
+        <div class="block_info__company">
+          <h4 class="block_info_title_block">company</h4>
+          <svg class="block_info_svg" width="103" height="23">
+            <use href="./svg/sprite.svg#logo"></use>
+          </svg>
+          <p class="block_info_paragraph">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.
+          </p>
+        </div>
+        <div class="block_info__links">
+          <h4 class="block_info_title_block">
+            Links
+          </h4>
+          <div class="block_info__nav_wrap">
+            <nav class="block_info_nav">
+              <ul class="block_info_list">
+                <li class="block_info_li">
+                  <a href="#" class="block_info_link">Home</a>
+                </li>
+                <li class="block_info_li">
+                  <a href="#" class="block_info_link">About</a>
+                </li>
+                <li class="block_info_li">
+                  <a href="#" class="block_info_link">Services</a>
+                </li>
+                <li class="block_info_li">
+                  <a href="#" class="block_info_link">Projects</a>
+                </li>
+                <li class="block_info_li">
+                  <a href="#" class="block_info_link">Contact Us</a>
+                </li>
+              </ul>
+            </nav>
+            <nav class="block_info_nav">
+              <ul class="block_info_list">
+                <li class="block_info_li">
+                  <a href="#" class="block_info_link">FAQ</a>
+                </li>
+                <li class="block_info_li">
+                  <a href="#" class="block_info_link">Terms</a>
+                </li>
+                <li class="block_info_li">
+                  <a href="#" class="block_info_link">Careers</a>
+                </li>
+              </ul>
+            </nav>
+            <nav class="block_info_nav">
+              <ul class="block_info_list">
+                <li class="block_info_li">
+                  <a href="#" class="block_info_link">Blog</a>
+                </li>
+                <li class="block_info_li">
+                  <a href="#" class="block_info_link">Partners</a>
+                </li>
+                <li class="block_info_li">
+                  <a href="#" class="block_info_link">News</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="block_info__address">
+          <h4 class="block_info_title_block">Contact us</h4>
+          <address class="block_info__address_wrap">
+            <ul class="block_info__address_list">
+              <li>213 Baker Street</li>
+              <li>Oriel City Kounty</li>
+              <li>7000 KNW,</li>
+              <li>Kountry Name</li>
+              <li><a href="tel:+239942334022">+23 994 233 4022</a></li>
+              <li>
+                <a href="mailto:info@konstruct.com">info@konstruct.com</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="block_info__social">
+          <ul class="block_info_social_list">
+            <li>
+              <a href="#" class="block_info__link_social">
+                <svg width="24" height="24">
+                  <use href="./svg/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="block_info__link_social">
+                <svg width="24" height="24">
+                  <use href="./svg/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="block_info__link_social">
+                <svg width="32" height="32">
+                  <use href="./svg/sprite.svg#google"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="block_info__copyright">
+        <p class="block_info__copyright_parag">
+          © 2017 Konstruct Inc. Designed by Jane Kathryn Teo
+        </p>
+      </div>
+    </div>
+  </section>
+</footer>
+
     <script src="js/main.min.js"></script>
   </body>
 </html>

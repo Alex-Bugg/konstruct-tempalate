@@ -1,4 +1,7 @@
 // stuff
+html {
+  scroll-behavior: smooth;
+}
 .container {
   max-width: 970px;
   width: 100%;
@@ -10,7 +13,7 @@
 .main__header {
   border-bottom: 1px solid #e6e6e6;
   &_wrap {
-    min-height: 769px;
+    min-height: 100vh;
     padding-top: 40px;
     background-image: url("../img/bg-header.jpg");
     background-position: center;
@@ -266,7 +269,7 @@
   }
   &__wrapper_cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     font-family: "Open Sans";
   }
   &__img {
@@ -302,6 +305,7 @@
 }
 .blue_button {
   min-width: 150px;
+  padding: 10px;
   font-family: Open Sans;
   font-style: normal;
   font-weight: bold;
@@ -339,6 +343,9 @@
   &:hover::after {
     opacity: 1;
   }
+  &:active {
+    opacity: 0.7;
+  }
 }
 // our_carabilities end
 
@@ -346,11 +353,12 @@
 
 .get_start {
   background-image: url(../img/bg-bottom.png);
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #171819;
   font-family: "Open Sans";
-  min-height: 500px;
+  min-height: 459px;
   padding-top: 81px;
   &_wrapper {
     display: flex;
@@ -376,3 +384,172 @@
 }
 
 // get_start end
+
+// main_footer
+.main_footer {
+  background-color: #171819;
+}
+
+// singup
+
+.singup {
+  font-family: "Open Sans";
+  &_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+  }
+  &_title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 30px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    letter-spacing: 0.846154px;
+    color: #ffffff;
+    margin-right: 70px;
+  }
+  &_label {
+    display: flex;
+  }
+  &_input {
+    padding: 10px 17px;
+    min-width: 250px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: 0.07px;
+    color: #48555b;
+  }
+}
+
+// singup end
+// block_info
+.block_info {
+  padding: 41px 0;
+  font-family: "Open Sans";
+  &_wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  &_title_block {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 15px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    letter-spacing: 0.846154px;
+    color: #ffffff;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+  &__company {
+    max-width: 250px;
+  }
+  &_svg {
+    margin-bottom: 15px;
+  }
+  &_paragraph {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.85px;
+    color: #ffffff;
+  }
+  &__nav_wrap {
+    display: flex;
+    justify-content: space-between;
+    min-width: 262px;
+  }
+  &_link {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.846154px;
+    color: #ffffff;
+    text-transform: uppercase;
+    transition: color 0.3s;
+    &:hover {
+      color: #00a4e5;
+    }
+    &:active {
+      opacity: 0.7;
+    }
+  }
+  &__address_list {
+    & li {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 11px;
+      line-height: 16px;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.846154px;
+      color: #ffffff;
+    }
+    & li a {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 11px;
+      line-height: 16px;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.846154px;
+      color: #ffffff;
+      padding: 10px 0;
+      &:hover {
+        color: #00a4e5;
+      }
+      &:active {
+        opacity: 0.7;
+      }
+    }
+  }
+  &_social_list {
+    display: flex;
+    align-items: center;
+    & li {
+      margin-right: 10px;
+    }
+  }
+  &__link_social {
+    display: block;
+    & svg {
+      fill: white;
+      transition: fill 0.3s;
+      &:hover {
+        fill: #00a4e5;
+      }
+      &:active {
+        opacity: 0.7;
+      }
+    }
+  }
+  &__copyright_parag {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 15px;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 0.846154px;
+    color: #ffffff;
+  }
+}
+// block_info end
+// main_footer
